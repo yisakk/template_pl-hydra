@@ -1,0 +1,268 @@
+[[36m2022-11-05 07:13:40,212[39m][[34m__main__[39m][[32mINFO[39m] - Instantiating trainer <pytorch_lightning.Trainer>
+[[36m2022-11-05 07:13:40,369[39m][[34m__main__[39m][[32mINFO[39m] - Logging hyperparameters!
+[[36m2022-11-05 07:13:40,383[39m][[34m__main__[39m][[32mINFO[39m] - Starting training!
+┏━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━━┓
+┃[1m    [22m┃[1m Name         [22m┃[1m Type             [22m┃[1m Params [22m┃
+┡━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━━┩
+│ 0  │ net          │ SimpleDenseNet   │ 68.0 K │
+│ 1  │ net.model    │ Sequential       │ 68.0 K │
+│ 2  │ net.model.0  │ Linear           │ 50.2 K │
+│ 3  │ net.model.1  │ BatchNorm1d      │    128 │
+│ 4  │ net.model.2  │ ReLU             │      0 │
+│ 5  │ net.model.3  │ Linear           │  8.3 K │
+│ 6  │ net.model.4  │ BatchNorm1d      │    256 │
+│ 7  │ net.model.5  │ ReLU             │      0 │
+│ 8  │ net.model.6  │ Linear           │  8.3 K │
+│ 9  │ net.model.7  │ BatchNorm1d      │    128 │
+│ 10 │ net.model.8  │ ReLU             │      0 │
+│ 11 │ net.model.9  │ Linear           │    650 │
+│ 12 │ criterion    │ CrossEntropyLoss │      0 │
+│ 13 │ train_acc    │ Accuracy         │      0 │
+│ 14 │ val_acc      │ Accuracy         │      0 │
+│ 15 │ test_acc     │ Accuracy         │      0 │
+│ 16 │ train_loss   │ MeanMetric       │      0 │
+│ 17 │ val_loss     │ MeanMetric       │      0 │
+│ 18 │ test_loss    │ MeanMetric       │      0 │
+│ 19 │ val_acc_best │ MaxMetric        │      0 │
+└────┴──────────────┴──────────────────┴────────┘
+[1mTrainable params[22m: 68.0 K
+[1mNon-trainable params[22m: 0
+[1mTotal params[22m: 68.0 K
+[1mTotal estimated model params size (MB)[22m: 0
+/usr/local/lib/python3.8/site-packages/pytorch_lightning/tr
+ainer/connectors/data_connector.py:219:
+PossibleUserWarning: The dataloader, val_dataloader 0, does
+not have many workers which may be a bottleneck. Consider
+increasing the value of the `num_workers` argument` (try 16
+which is the number of cpus on this machine) in the
+`DataLoader` init to improve performance.
+  rank_zero_warn(
+/usr/local/lib/python3.8/site-packages/pytorch_lightning/tr
+ainer/connectors/data_connector.py:219:
+PossibleUserWarning: The dataloader, train_dataloader, does
+not have many workers which may be a bottleneck. Consider
+increasing the value of the `num_workers` argument` (try 16
+which is the number of cpus on this machine) in the
+`DataLoader` init to improve performance.
+  rank_zero_warn(
+[37mEpoch 0   [39m [38m╸━━━━━━━━[39m [37m28/470[39m [38m0:00:01 •[39m [38m26.80it/s[39m [37mloss: 1.16 
+                            [38m0:00:17  [39m           [37mv_num: 6tiz
+Trainer already configured with model summary callbacks: [<class 'pytorch_lightning.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+GPU available: True (cuda), used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/usr/local/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py:1766: PossibleUserWarning: GPU available but not used. Set `accelerator` and `devices` using `Trainer(accelerator='gpu', devices=3)`.
+
+                             [38m0:00:15  [39m           [37m0.269     
+                                                 [37mv_num:    
+
+                                                 [37mv_num:    
+                                                 [37m6tiz      
+[37mValidation[39m [38m━━━━━━━╸━[39m [37m34/40  [39m [38m0:00:01 •[39m [38m25.34it/s
+                                                [37m0.965      
+                                                [37mval/acc_be…
+                                                [37m0.965      
+                                                [37mtrain/loss:
+                                                [37m0.322      
+                                                [37mtrain/acc: 
+                                                 [37m0.322     
+                                                 [37mtrain/acc:
+
+
+                                                 [37m0.965     
+                                                 [37mval/acc_b…
+                                                 [37m0.965     
+                                                 [37mtrain/los…
+                                                 [37m0.322     
+                                                 [37mtrain/acc:
+                                                 [37mtrain/acc:
+
+Epoch 1    [38m━━━━━━━━╸[39m [37m452/470[39m [38m0:00:21 •[39m [38m20.96it/s[39m [37mloss: 0.1 
+                             [38m0:00:01  [39m           [37mv_num:    
+                                                 [37m6tiz      
+                                                [37mval/loss:  
+                                                [37m0.088      
+                                                [37mval/acc:   
+                                                [37m0.971      
+                                                [37mval/acc_be…
+                                                [37m0.971      
+                                                [37mtrain/loss:
+                                                [37m0.107      
+                                                [37mtrain/acc: 
+
+                                                 [37m0.971     
+                                                 [37mtrain/los…
+                                                 [37m0.107     
+                                                 [37mtrain/acc:
+
+                                                 [37m0.968     
+                                                 [37m0.107     
+                                                 [37mtrain/acc:
+
+                                                 [37mtrain/acc:
+
+
+
+                                                 [37m0.977     
+Epoch 3    [38m━━━━━╸━━━[39m [37m312/470[39m [38m0:00:13 •[39m [38m22.82it/s[39m [37mloss:     
+                             [38m0:00:07  [39m           [37m0.0447    
+                                                 [37mv_num:    
+                                                 [37m6tiz      
+                                                 [37mval/loss: 
+                                                 [37m0.084     
+                                                 [37mval/acc:  
+                                                 [37m0.974     
+                                                 [37mval/acc_b…
+                                                 [37m0.974     
+
+                                                 [37mtrain/los…
+                                                 [37mval/loss: 
+                                                 [37m0.084     
+                                                 [37mval/acc:  
+                                                 [37m0.974     
+                                                 [37mval/acc_b…
+                                                 [37m0.974     
+                                                 [37mtrain/los…
+                                                 [37m0.072     
+                                                 [37mtrain/acc:
+                                                 [37m0.977     
+
+
+                             [38m0:00:18  [39m           [37m0.0499    
+                                                 [37mv_num:    
+                                                 [37m6tiz      
+                                                 [37mval/loss: 
+                                                 [37m0.079     
+                                                 [37mval/acc:  
+                                                 [37m0.977     
+                                                 [37mval/acc_b…
+                                                 [37m0.977     
+                                                 [37mtrain/los…
+                                                 [37m0.055     
+                                                 [37mtrain/acc:
+
+                             [38m0:00:13  [39m           [37m0.0393    
+                                                 [37mv_num:    
+                                                 [37m6tiz      
+                                                 [37mval/loss: 
+                                                 [37m0.079     
+                                                 [37mval/acc:  
+                                                 [37m0.977     
+                                                 [37mval/acc_b…
+                                                 [37m0.977     
+                                                 [37mtrain/los…
+                                                 [37m0.055     
+                                                 [37mtrain/acc:
+                                                 [37m0.983     
+[37mValidation[39m [38m━╸━━━━━━━[39m [37m8/40   [39m [38m0:00:00 •[39m [38m13.51it/s
+
+                                                 [37mtrain/acc:
+
+                             [38m0:00:11  [39m           [37m0.0316    
+                                                 [37mv_num:    
+                                                 [37m6tiz      
+                                                 [37mval/loss: 
+                                                 [37m0.082     
+                                                 [37mval/acc:  
+                                                 [37m0.974     
+                                                 [37mval/acc_b…
+                                                 [37m0.977     
+                                                 [37mtrain/los…
+                                                 [37m0.045     
+                                                 [37mtrain/acc:
+
+                                                 [37m0.985     
+                                                 [37m6tiz      
+                                                 [37mval/loss: 
+                                                 [37m0.082     
+                                                 [37mval/acc:  
+                                                 [37m0.974     
+                                                 [37mval/acc_b…
+                                                 [37m0.977     
+                                                 [37mtrain/los…
+                                                 [37m0.045     
+                                                 [37mtrain/acc:
+
+                                                 [37m0.985     
+
+Epoch 6    [38m━━━━━━━━━[39m [37m17/470[39m [38m0:00:01 •[39m [38m15.89it/s[39m [37mloss:      
+                            [38m0:00:29  [39m           [37m0.0374     
+                                                [37mv_num: 6tiz
+                                                [37mval/loss:  
+                                                [37m0.088      
+                                                [37mval/acc:   
+                                                [37m0.975      
+                                                [37mval/acc_be…
+                                                [37m0.977      
+                                                [37mtrain/loss:
+                                                [37m0.038      
+                                                [37mtrain/acc: 
+                                                 [37mtrain/acc:
+
+
+                                                 [37m0.988     
+                                                 [37mval/acc_b…
+                                                 [37m0.977     
+                                                 [37mtrain/los…
+                                                 [37m0.038     
+                                                 [37mtrain/acc:
+                                                 [37m0.988     
+[37mValidation[39m [38m━━╺━━━━━━[39m [37m10/40  [39m [38m0:00:00 •[39m [38m24.98it/s
+
+
+
+                             [38m0:00:19  [39m           [37m0.0226    
+                                                 [37mv_num:    
+                                                 [37m6tiz      
+                                                 [37mval/loss: 
+                                                 [37m0.079     
+                                                 [37mval/acc:  
+                                                 [37m0.978     
+                                                 [37mval/acc_b…
+                                                 [37m0.978     
+                                                 [37mtrain/los…
+                                                 [37m0.035     
+                                                 [37mtrain/acc:
+                                                 [37m0.989     
+[37mValidation[39m [38m━╺━━━━━━━[39m [37m5/40   [39m [38m0:00:00 •[39m [38m24.29it/s
+
+
+                                                [37mtrain/acc: 
+                                                 [37mtrain/acc:
+
+                                                 [37m0.991     
+                                                 [37mval/loss: 
+                                                 [37m0.078     
+                                                 [37mval/acc:  
+                                                 [37m0.976     
+                                                 [37mval/acc_b…
+                                                 [37m0.978     
+                                                 [37mtrain/los…
+                                                 [37m0.028     
+                                                 [37mtrain/acc:
+                                                 [37m0.991     
+[37mValidation[39m [38m╸━━━━━━━━[39m [37m4/40   [39m [38m0:00:00 •[39m [38m22.85it/s
+
+
+                                                 [37mtrain/acc:
+
+                                                 [37mtrain/acc:
+                                                 [37m0.992     
+[37mValidation[39m [38m━━╸━━━━━━[39m [37m12/40  [39m [38m0:00:00 •[39m [38m24.53it/s
+                             [38m0:00:02  
+`Trainer.fit` stopped: `max_epochs=10` reached.
+Restoring states from the checkpoint path at /home/ubuntu/yisakk/Template/template_pl-hydra/logs/train/runs/2022-11-05_07-13-37/checkpoints/epoch_006.ckpt
+Loaded model weights from checkpoint at /home/ubuntu/yisakk/Template/template_pl-hydra/logs/train/runs/2022-11-05_07-13-37/checkpoints/epoch_006.ckpt
+/usr/local/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:219: PossibleUserWarning: The dataloader, test_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 16 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+[37mTesting[39m [38m━━━━━╺━━━━━━━━━━[39m [37m26/79[39m [38m0:00:00 •       [39m [38m32.81it/s
+┃[1m        Test metric        [22m┃[1m       DataLoader 0        [22m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│[36m         test/acc          [39m│[35m    0.9776999950408936     [39m│
+│[36m         test/loss         [39m│[35m    0.07514730095863342    [39m│
+└───────────────────────────┴───────────────────────────┘
+[37mTesting[39m [38m━━━━━━━━━━━━━━━━[39m [37m79/79[39m [38m0:00:02 •       [39m [38m29.77it/s
+                               [38m0:00:00         
+[?25h[[36m2022-11-05 07:17:20,609[39m][[34m__main__[39m][[32mINFO[39m] - Best ckpt path: /home/ubuntu/yisakk/Template/template_pl-hydra/logs/train/runs/2022-11-05_07-13-37/checkpoints/epoch_006.ckpt
+[[36m2022-11-05 07:17:20,611[39m][[34msrc.utils.utils[39m][[32mINFO[39m] - Closing loggers...
+[[36m2022-11-05 07:17:20,612[39m][[34msrc.utils.utils[39m][[32mINFO[39m] - Closing wandb!

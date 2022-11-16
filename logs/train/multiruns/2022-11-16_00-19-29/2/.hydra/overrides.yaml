@@ -1,0 +1,4 @@
+- model.optimizer.lr=0.03584594526879088
+- datamodule.batch_size=128
+- hparams_search=chexpert_optuna
+- experiment=chexpert

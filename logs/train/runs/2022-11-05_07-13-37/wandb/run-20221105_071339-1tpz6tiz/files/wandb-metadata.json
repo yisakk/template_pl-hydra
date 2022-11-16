@@ -1,0 +1,135 @@
+{
+    "os": "Linux-4.15.0-160-generic-x86_64-with-glibc2.2.5",
+    "python": "3.8.15",
+    "heartbeatAt": "2022-11-05T07:13:40.102558",
+    "startedAt": "2022-11-05T07:13:39.233599",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "logger=wandb"
+    ],
+    "state": "running",
+    "program": "src/train.py",
+    "codePath": "src/train.py",
+    "git": {
+        "remote": "https://github.com/yisakk/template_pl-hydra.git",
+        "commit": "a7ba18510ca8192a0c2b3afbbd2ee1e97a78d9e5"
+    },
+    "email": null,
+    "root": "/home/ubuntu/yisakk/Template/template_pl-hydra",
+    "host": "75823f9f8a83",
+    "username": "root",
+    "executable": "/usr/local/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2199.9419999999996,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2199.942,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.942,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.942,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.942,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.942,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.942,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.942,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.942,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.942,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.942,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.942,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.942,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.942,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.942,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.942,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.942,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 1999.0195350646973,
+        "used": 903.972526550293
+    },
+    "gpu": "Tesla V100-SXM2-32GB",
+    "gpu_count": 3,
+    "gpu_devices": [
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34089730048
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34089730048
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34089730048
+        }
+    ],
+    "memory": {
+        "total": 265.6772880554199
+    }
+}

@@ -1,0 +1,286 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.5
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: val/loss
+      5: 1
+      6:
+      - 1
+    - 1: val/auc
+      5: 1
+      6:
+      - 1
+    - 1: val/auc_best
+      5: 1
+      6:
+      - 1
+    - 1: epoch
+      5: 1
+      6:
+      - 1
+    - 1: train/loss
+      5: 1
+      6:
+      - 1
+    - 1: train/auc
+      5: 1
+      6:
+      - 1
+    - 1: test/loss
+      5: 1
+      6:
+      - 1
+    - 1: test/auc
+      5: 1
+      6:
+      - 1
+    python_version: 3.8.15
+    start_time: 1668557970.158685
+    t:
+      1:
+      - 1
+      - 5
+      - 9
+      - 41
+      - 49
+      - 50
+      - 53
+      - 55
+      - 63
+      - 80
+      2:
+      - 1
+      - 5
+      - 9
+      - 41
+      - 49
+      - 50
+      - 53
+      - 55
+      - 63
+      - 80
+      3:
+      - 2
+      - 7
+      - 13
+      - 15
+      - 23
+      4: 3.8.15
+      5: 0.13.5
+      8:
+      - 5
+callbacks/early_stopping/_target_:
+  desc: null
+  value: pytorch_lightning.callbacks.EarlyStopping
+callbacks/early_stopping/check_finite:
+  desc: null
+  value: true
+callbacks/early_stopping/check_on_train_epoch_end:
+  desc: null
+  value: None
+callbacks/early_stopping/divergence_threshold:
+  desc: null
+  value: None
+callbacks/early_stopping/min_delta:
+  desc: null
+  value: 0.0
+callbacks/early_stopping/mode:
+  desc: null
+  value: max
+callbacks/early_stopping/monitor:
+  desc: null
+  value: val/auc
+callbacks/early_stopping/patience:
+  desc: null
+  value: 100
+callbacks/early_stopping/stopping_threshold:
+  desc: null
+  value: None
+callbacks/early_stopping/strict:
+  desc: null
+  value: true
+callbacks/early_stopping/verbose:
+  desc: null
+  value: false
+callbacks/model_checkpoint/_target_:
+  desc: null
+  value: pytorch_lightning.callbacks.ModelCheckpoint
+callbacks/model_checkpoint/auto_insert_metric_name:
+  desc: null
+  value: false
+callbacks/model_checkpoint/dirpath:
+  desc: null
+  value: /home/ubuntu/yisakk/Template/template_pl-hydra/logs/train/runs/2022-11-16_00-19-26/checkpoints
+callbacks/model_checkpoint/every_n_epochs:
+  desc: null
+  value: None
+callbacks/model_checkpoint/every_n_train_steps:
+  desc: null
+  value: None
+callbacks/model_checkpoint/filename:
+  desc: null
+  value: epoch_{epoch:03d}
+callbacks/model_checkpoint/mode:
+  desc: null
+  value: max
+callbacks/model_checkpoint/monitor:
+  desc: null
+  value: val/auc
+callbacks/model_checkpoint/save_last:
+  desc: null
+  value: true
+callbacks/model_checkpoint/save_on_train_epoch_end:
+  desc: null
+  value: None
+callbacks/model_checkpoint/save_top_k:
+  desc: null
+  value: 1
+callbacks/model_checkpoint/save_weights_only:
+  desc: null
+  value: false
+callbacks/model_checkpoint/train_time_interval:
+  desc: null
+  value: None
+callbacks/model_checkpoint/verbose:
+  desc: null
+  value: false
+callbacks/model_summary/_target_:
+  desc: null
+  value: pytorch_lightning.callbacks.RichModelSummary
+callbacks/model_summary/max_depth:
+  desc: null
+  value: -1
+callbacks/rich_progress_bar/_target_:
+  desc: null
+  value: pytorch_lightning.callbacks.RichProgressBar
+ckpt_path:
+  desc: null
+  value: None
+datamodule/_target_:
+  desc: null
+  value: src.datamodules.chexpert_datamodule.CheXpertDataModule
+datamodule/batch_size:
+  desc: null
+  value: 128
+datamodule/data_dir:
+  desc: null
+  value: /home/ubuntu/yisakk/Template/template_pl-hydra/data/
+datamodule/image_root_path:
+  desc: null
+  value: CheXpert-v1.0-pad224/
+datamodule/image_size:
+  desc: null
+  value: 224
+datamodule/num_workers:
+  desc: null
+  value: 16
+datamodule/pin_memory:
+  desc: null
+  value: false
+extras/enforce_tags:
+  desc: null
+  value: true
+extras/ignore_warnings:
+  desc: null
+  value: false
+extras/print_config:
+  desc: null
+  value: true
+model/_target_:
+  desc: null
+  value: src.models.timm_module.TimmLitModule
+model/net/_target_:
+  desc: null
+  value: timm.create_model
+model/net/model_name:
+  desc: null
+  value: densenet121
+model/net/num_classes:
+  desc: null
+  value: 5
+model/net/pretrained:
+  desc: null
+  value: true
+model/optimizer/_partial_:
+  desc: null
+  value: true
+model/optimizer/_target_:
+  desc: null
+  value: torch.optim.Adam
+model/optimizer/lr:
+  desc: null
+  value: 0.0001
+model/optimizer/weight_decay:
+  desc: null
+  value: 0.0
+model/params/non_trainable:
+  desc: null
+  value: 0
+model/params/total:
+  desc: null
+  value: 6958981
+model/params/trainable:
+  desc: null
+  value: 6958981
+model/scheduler/_partial_:
+  desc: null
+  value: true
+model/scheduler/_target_:
+  desc: null
+  value: torch.optim.lr_scheduler.ReduceLROnPlateau
+model/scheduler/factor:
+  desc: null
+  value: 0.1
+model/scheduler/mode:
+  desc: null
+  value: min
+model/scheduler/patience:
+  desc: null
+  value: 10
+seed:
+  desc: null
+  value: 12345
+tags:
+  desc: null
+  value:
+  - mnist
+  - timm_resnet50
+task_name:
+  desc: null
+  value: train
+trainer/_target_:
+  desc: null
+  value: pytorch_lightning.Trainer
+trainer/accelerator:
+  desc: null
+  value: gpu
+trainer/check_val_every_n_epoch:
+  desc: null
+  value: 1
+trainer/default_root_dir:
+  desc: null
+  value: /home/ubuntu/yisakk/Template/template_pl-hydra/logs/train/runs/2022-11-16_00-19-26
+trainer/deterministic:
+  desc: null
+  value: false
+trainer/devices:
+  desc: null
+  value: 1
+trainer/gradient_clip_val:
+  desc: null
+  value: 0.5
+trainer/max_epochs:
+  desc: null
+  value: 10
+trainer/min_epochs:
+  desc: null
+  value: 10
